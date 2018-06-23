@@ -1,9 +1,13 @@
-package com.example.infrastructure.datasource;
+package com.example.demo.infrastructure.datasource;
 
-import com.example.domain.model.Todo;
+import com.example.demo.domain.model.Todo;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 
+@Mapper
+@Repository
 public interface TodoRepository {
     Todo findOne(String todoId);
 
