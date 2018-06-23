@@ -1,6 +1,6 @@
-package com.example.domain.model;
+package com.example.demo.domain.model;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Todo {
 
@@ -10,7 +10,7 @@ public class Todo {
 
     private boolean finished;
 
-    private Date createdAt;
+    private LocalDateTime createdAt;
 
     public String getTodoId() {
         return todoId;
@@ -36,11 +36,11 @@ public class Todo {
         this.finished = finished;
     }
 
-    public Date getCreatedAt() {
+    public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(Date createdAt) {
+    public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
 }
